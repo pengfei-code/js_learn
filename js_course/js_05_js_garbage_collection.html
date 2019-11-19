@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js garbage collection</title>
+
+    <script>
+        var obj = {
+            a:"a",
+            b:20,
+            c:function(){
+                console.log("c")
+            }
+
+        }
+        obj.c();
+
+        //1 js can be automaticlly garbage collection
+
+        obj = null
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

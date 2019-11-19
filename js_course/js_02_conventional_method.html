@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>conventional method</title>
+
+    <script>
+        //1 Tooltip
+        c = confirm("I am a confirm")
+        console.log(c)
+        p = prompt("Please enter a text")
+        console.log(p)
+        //2 dom.write
+        document.write("<button>I am building though the document.write </button>")
+        //3 innerhtml
+        document.body.innerHTML = "<ul>" +
+            "<li>yellow</li>" +
+            "<li>red</li>" +
+            "<li>brown</li>" +
+            "</ul>"
+        //** It is particular to note that if you want to use the dom like button  ,
+        // **the dom must precede your method call
+
+        // btn1 = document.getElementById("btn1")
+        // btn1.onclick = function(){
+        //     document.write("you find me through dom.get  and also add a method to me")
+        //
+        // }
+
+
+    </script>
+    <button id="btn1">click me</button>
+    <script>
+
+        //4 dom getElementById onclick event
+        btn1 = document.getElementById("btn1")
+        btn1.onclick = function(){
+            document.write("you find me through dom.get  and also add a method to me")
+
+        }
+    </script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>

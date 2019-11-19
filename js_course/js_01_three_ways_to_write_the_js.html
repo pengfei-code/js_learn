@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>The three ways of coding js </title>
+    //way 1
+    //write the code in the script directly
+    <script>
+
+        alert("hello world")
+
+
+    </script>
+
+    //way2
+    <button onclick="alert('button click')">please click me </button>
+    <a href = "javascript:document.write('a href')"> I am an a label :you can click me</a>
+
+    // way3  import a js file
+    <script src = "js/js_01.js" >
+        aa()
+    </script>
+
+    <script>
+        //If you use the method of dom.write between script ，rather than  in a dom event ,then it will not cover the dom
+        document.write("tttt")
+        bb()
+
+
+    </script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>
